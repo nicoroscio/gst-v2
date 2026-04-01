@@ -1,0 +1,15 @@
+:root{--bg:#070b1a;--surface:rgba(255,255,255,.72);--surface-strong:#fff;--text:#0f172a;--muted:#475569;--primary:#4f46e5;--accent:#06b6d4}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:Inter,system-ui,-apple-system,sans-serif;background:radial-gradient(circle at top left,#dbeafe 0,#eef2ff 28%,#f8fafc 58%,#fff 100%);color:var(--text);line-height:1.7;min-height:100vh}
+.container{width:min(1100px,92%);margin-inline:auto}
+.bg-orb{position:fixed;border-radius:999px;filter:blur(60px);opacity:.35;z-index:-1}.orb-1{width:240px;height:240px;background:#22d3ee;top:-40px;left:-20px}.orb-2{width:300px;height:300px;background:#818cf8;right:-80px;top:180px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(7,11,26,.8);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.15)}
+.nav-wrap{display:flex;align-items:center;gap:1rem;padding:.85rem 0}.brand{font-weight:800;letter-spacing:.4px;text-decoration:none;color:#fff}
+.menu{display:flex;gap:.8rem;overflow:auto}.menu a{color:#cbd5e1;text-decoration:none;font-size:.86rem;white-space:nowrap;padding:.35rem .55rem;border-radius:8px}.menu a:hover{background:rgba(255,255,255,.12);color:#fff}
+.menu-toggle{display:none;background:transparent;color:#fff;border:1px solid #64748b;border-radius:10px;padding:.4rem .65rem}
+.glass{background:var(--surface);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.65);box-shadow:0 24px 50px rgba(15,23,42,.08);border-radius:24px}
+.hero{margin:2rem 0 1.2rem;padding:2rem}.tag{display:inline-block;background:#e0e7ff;color:#3730a3;font-weight:700;border-radius:999px;padding:.25rem .72rem;font-size:.78rem}
+h1{font-size:clamp(2rem,4vw,3.3rem);margin:.8rem 0 .7rem;line-height:1.1}.lead{color:var(--muted);max-width:70ch}
+.content{padding:1.5rem 1.5rem 2rem}.content p{margin:.6rem 0;padding-left:.35rem;border-left:2px solid rgba(79,70,229,.2)}
+.all-pages{padding:1.2rem 0 3rem}.all-pages h2{margin:.2rem 0 .8rem;font-size:1.2rem}.chips{display:flex;flex-wrap:wrap;gap:.55rem}.chip{font-size:.86rem;text-decoration:none;padding:.35rem .6rem;border-radius:999px;background:#eef2ff;color:#312e81}.chip:hover{background:#dbeafe}
+.site-footer{background:var(--bg);color:#cbd5e1;padding:1rem 0;margin-top:1rem}
+@media (max-width:900px){.menu-toggle{display:block;margin-left:auto}.menu{display:none;position:absolute;left:4%;right:4%;top:56px;padding:1rem;background:#0f172a;border:1px solid #334155;border-radius:12px;flex-direction:column;max-height:65vh}.menu.open{display:flex}.hero{padding:1.3rem}.content{padding:1rem}}
